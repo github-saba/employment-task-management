@@ -154,12 +154,20 @@ The system uses JWT (JSON Web Tokens) for authentication:
 - **Admin**: Full system access, user management, role assignment
 - **Manager**: Can manage employees, create and assign tasks, view reports
 - **Employee**: Can view assigned tasks, update task status
+- **Permissions are enforced at**:
+  - API level using Spring Security annotations
+  - UI level using role-based route guards
 
 ## Deployment on AWS
 
 ### Prerequisites
 - AWS account with appropriate permissions
 - AWS CLI configured locally
+
+### Deployment architecture
+- Backend: EC2 (Dockerized Spring Boot)
+- Database: Amazon RDS (PostgreSQL)
+- Frontend: S3 + CloudFront
 
 ### Deployment Steps
 See [AWS_DEPLOYMENT.md](./AWS_DEPLOYMENT.md) for detailed instructions.
@@ -169,6 +177,9 @@ See [AWS_DEPLOYMENT.md](./AWS_DEPLOYMENT.md) for detailed instructions.
 See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for complete API endpoints and usage examples.
 
 ## Testing
+
+- Unit tests for service layer
+- Integration tests for REST APIs
 
 ### Backend Tests
 ```bash
