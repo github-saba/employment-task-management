@@ -30,10 +30,10 @@ A production-ready full-stack system designed for organizations to manage employ
 - React Router for navigation
 
 ### Backend
-- Spring Boot 3.x
-- Spring Security with JWT
+- Spring Boot 3.x – REST API development with layered architecture
+- Spring Security + JWT – Stateless authentication and authorization
 - Spring Data JPA for database operations
-- PostgreSQL database
+- PostgreSQL – Relational data modeling with transactional integrity
 - Lombok for boilerplate reduction
 
 ### Infrastructure
@@ -51,6 +51,20 @@ A production-ready full-stack system designed for organizations to manage employ
 - AWS Account (for deployment)
 
 ### Local Development
+
+### Environment Configuration
+
+Backend:
+- Configure `application.yml` or `application-dev.yml`
+- Required variables:
+  - `DB_URL`
+  - `DB_USERNAME`
+  - `DB_PASSWORD`
+  - `JWT_SECRET`
+
+Frontend:
+- Create `.env`
+  - `REACT_APP_API_BASE_URL=http://localhost:8080`
 
 #### Backend Setup
 ```bash
@@ -115,6 +129,13 @@ employment-task-management/
 │       ├── backend-ci.yml
 │       └── frontend-ci.yml
 └── README.md
+
+The backend follows a layered architecture:
+- controller → REST endpoints
+- service → business logic
+- repository → data access
+- dto → API contracts
+
 ```
 
 ## Authentication
