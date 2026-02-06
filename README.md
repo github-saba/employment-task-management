@@ -4,14 +4,21 @@ A comprehensive full-stack application for managing employees and their tasks wi
 A production-ready full-stack system designed for organizations to manage employees, assign tasks, and enforce role-based access control with secure authentication.
 
 ## Features
+ 
+  ### Core Functional Features
+- Employee lifecycle management (Create, Update, Deactivate)
+- Task assignment, tracking, and completion workflow
+- Role-based access control (Admin, Manager, Employee)
 
-- **Employee Management**: Create, update, and manage employee profiles
-- **Task Management**: Assign, track, and complete tasks
-- **Authentication**: JWT-based authentication system
-- **Role-Based Access Control (RBAC)**: Different access levels for Admin, Manager, and Employee roles
-- **Real-time Updates**: Live task and employee status updates
-- **Responsive Design**: Mobile-friendly UI
-- **AWS Deployment**: Production-ready deployment configuration
+### Security & Platform Features
+- JWT-based authentication with Spring Security
+- API-level authorization enforcement
+- Responsive UI for desktop and mobile
+
+### DevOps & Deployment
+- Dockerized backend and frontend
+- CI pipelines using GitHub Actions
+- AWS-ready deployment (EC2, RDS, S3, CloudFront)
 
 ## Tech Stack
 
