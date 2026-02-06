@@ -145,6 +145,9 @@ The system uses JWT (JSON Web Tokens) for authentication:
 - Token stored in localStorage on client-side
 - Token included in Authorization header for API requests
 - Token expiration: 24 hours (configurable)
+- Token storage:
+  - Currently stored in localStorage for simplicity
+  - Can be migrated to HttpOnly cookies for enhanced security
 
 ## Roles & Permissions
 
