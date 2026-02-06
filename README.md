@@ -1,8 +1,9 @@
 # Employment/Task Management System
 
 A comprehensive full-stack application for managing employees and their tasks with role-based access control, built with React, Spring Boot, and PostgreSQL.
+A production-ready full-stack system designed for organizations to manage employees, assign tasks, and enforce role-based access control with secure authentication.
 
-## 🎯 Features
+## Features
 
 - **Employee Management**: Create, update, and manage employee profiles
 - **Task Management**: Assign, track, and complete tasks
@@ -12,7 +13,7 @@ A comprehensive full-stack application for managing employees and their tasks wi
 - **Responsive Design**: Mobile-friendly UI
 - **AWS Deployment**: Production-ready deployment configuration
 
-## 📋 Tech Stack
+## Tech Stack
 
 ### Frontend
 - React 18.x
@@ -33,7 +34,7 @@ A comprehensive full-stack application for managing employees and their tasks wi
 - AWS EC2, RDS, S3, CloudFront
 - GitHub Actions for CI/CD
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 16+
@@ -67,7 +68,7 @@ Frontend runs on: `http://localhost:3000`
 docker-compose up -d postgres
 ```
 
-## 📚 Project Structure
+## Project Structure
 
 ```
 employment-task-management/
@@ -109,7 +110,7 @@ employment-task-management/
 └── README.md
 ```
 
-## 🔐 Authentication
+## Authentication
 
 The system uses JWT (JSON Web Tokens) for authentication:
 - Login endpoint: `POST /api/auth/login`
@@ -117,13 +118,13 @@ The system uses JWT (JSON Web Tokens) for authentication:
 - Token included in Authorization header for API requests
 - Token expiration: 24 hours (configurable)
 
-## 👥 Roles & Permissions
+## Roles & Permissions
 
 - **Admin**: Full system access, user management, role assignment
 - **Manager**: Can manage employees, create and assign tasks, view reports
 - **Employee**: Can view assigned tasks, update task status
 
-## 🚀 Deployment on AWS
+## Deployment on AWS
 
 ### Prerequisites
 - AWS account with appropriate permissions
@@ -132,11 +133,11 @@ The system uses JWT (JSON Web Tokens) for authentication:
 ### Deployment Steps
 See [AWS_DEPLOYMENT.md](./AWS_DEPLOYMENT.md) for detailed instructions.
 
-## 📝 API Documentation
+## API Documentation
 
 See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for complete API endpoints and usage examples.
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 ```bash
@@ -150,24 +151,24 @@ cd frontend
 npm test
 ```
 
-## 📊 Database Schema
+## Database Schema
 
 See [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) for detailed database structure.
 
-## 🤝 Contributing
+## Contributing
 
 1. Create a feature branch: `git checkout -b feature/your-feature`
 2. Commit changes: `git commit -m 'Add your feature'`
 3. Push to branch: `git push origin feature/your-feature`
 4. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📧 Support
+## Support
 
-For support, email: support@taskmanagement.com
+For support, email: thiravidan@gmail.com
 
 ---
 
