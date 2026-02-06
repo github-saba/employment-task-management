@@ -17,7 +17,7 @@ A production-ready full-stack system designed for organizations to manage employ
 
 ### DevOps & Deployment
 - Dockerized backend and frontend
-- CI pipelines using GitHub Actions
+- CI/CD pipelines using GitHub Actions
 - AWS-ready deployment (EC2, RDS, S3, CloudFront)
 
 ## Tech Stack
